@@ -1,0 +1,30 @@
+<html>
+<body>
+    <style>
+        a {
+            font-size: 15px;
+        }
+    </style>
+    <center>
+        <h1 style="font-size: 30px; text-align: center; color: #800000; margin: 100px; ">PREDICTION:</h1>
+
+        {% if data == [1] %}
+        <h1 style="font-size: 50px; text-align: center; color: #800000; margin: 100px; "> A fire will occur in these conditions. </h1>
+        {% else %}        
+        <h1 style="font-size: 50px; text-align: center; color: #800000; margin: 100px; ">No fire will occur in these conditions. </h1>
+        {% endif %}
+
+        <br> <br>
+        <a href="/"> Go back to home page </a>
+    </center>
+    
+</body>
+<style>
+    body {
+        background-image: url('https://cdn.pixabay.com/photo/2021/07/01/14/20/wildfire-6379477_960_720.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+</html>

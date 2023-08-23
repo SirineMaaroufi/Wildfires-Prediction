@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Wildfires Prediction </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <h1 style="font-size: 100px; text-align: center; color: #800000; margin: 50px;">Wildfires Prediction</h1>
+
+    <center>
+        <h4 style="font-size: 20px; text-align: center; color: #FFE4C4; margin: 10px;">
+            We predict wildfires' occurence using a machine learning algorithm based on the following features:
+        </h4>
+        <h4 style="font-size: 20px; text-align: center; color: #FFE4C4; margin: 20px; ">
+            NDVI (Normalized Difference Vegetation Index),LST (Land surface temperature), and Burned area.
+        </h4>
+        <h4 style="font-size: 20px; text-align: center ;color: #FFE4C4; margin: 20px;"> Please, enter the values of the features.
+        </h4>
+            <form method="POST" , action="{{url_for('home')}}">
+                <h3 style="font-size: 20px; color: #FFE4C4 ; text-align: center; margin: 10px;">
+                    NDVI         : <input type="float" , name="NDVI" , placeholder="enter value"> <br> <br>
+                    LST          : <input type="float" , name="LST" , placeholder="enter value"> <br> <br>
+                    Burned Area  : <input type="float" , name="Burned Area" , placeholder="enter value"> <br> <br>
+
+                    <input type="submit" , value="PREDICT" />
+                </h3>
+            </form>
+    </center>
+
+</body>
+<style>
+    body {
+        background-image: url('https://cdn.pixabay.com/photo/2021/07/01/14/20/wildfire-6379477_960_720.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+</html>
